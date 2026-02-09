@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order the Book | PARI Foundation</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="https://www.pariindia.in" class="logo">
+        PARI <span>Foundation</span>
+      </a>
+      <a href="https://www.pariindia.in" class="back-link">← Back to website</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>
+          Break the Silence,<br />
+          <span>End the Violence</span>
+        </h1>
+        <p class="hero-subtext">
+          A book by Yogita Bhayana, calling for national transformation
+          and accountability in the fight against sexual violence.
+        </p>
+      </div>
+
+      <!-- Book Cover -->
+      <div class="hero-image">
+        <img src="assets/images/book-cover.jpg" alt="Rape Free India Book Cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Book -->
+  <section class="section">
+    <div class="container">
+      <h2>About the Book</h2>
+      <p>
+        <strong>Rape Free India</strong> is not just a publication — it is a battle cry.
+        Drawing on seventeen years of grassroots work, Yogita Bhayana exposes
+        systemic failures that allow violence to persist and calls for policy-driven reform.
+      </p>
+      <p>
+        This book shifts the focus from outrage to action, offering a blueprint
+        for realizing <strong>Mission Rape Free India 2029</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Order Form -->
+  <section class="section grey-bg">
+    <div class="container form-container">
+      <h2>Order the Book</h2>
+      <p class="form-note">
+        Please share your details below. Our team will get in touch with you shortly.
+      </p>
+
+      <form
+        id="bookOrderForm"
+        action="https://docs.google.com/forms/d/e/1FAIpQLScL5ltWACUj78wwGBZlOsNUoUyXTxWdf5ZXxwkuoJXeCjAe4A/formResponse"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="submitted=true;"
+
+      >
+
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" name="entry.1246720590" required />
+        </div>
+
+        <div class="form-group">
+          <label>Email ID *</label>
+          <input type="email" name="entry.1347694678" required />
+        </div>
+
+        <div class="form-group">
+          <label>Contact Number *</label>
+          <input type="tel" name="entry.244833945" required />
+        </div>
+
+        <div class="form-group">
+          <label>Full Address (with Pincode) *</label>
+          <textarea name="entry.180718294" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">
+          Submit Order Request
+        </button>
+      </form>
+
+      <!-- Hidden iframe to prevent redirect -->
+      <iframe
+        name="hidden_iframe"
+        style="display:none;"
+        onload="if(submitted){showSuccess();}"
+      ></iframe>
+
+      <p class="disclaimer">
+        Note: This is not a payment page. Our team will contact you to complete the order.
+      </p>
+
+      <p id="formStatus" class="form-status"></p>
+    </div>
+  </section>
+
+  <!-- Collage Section -->
+  <section class="section grey-bg">
+    <div class="container">
+      <h2>Inside the Movement</h2>
+
+      <div class="image-grid">
+        <img src="assets/images/collage-1.jpg" alt="PARI Ground Work">
+        <img src="assets/images/collage-2.jpg" alt="Justice Campaigns">
+        <img src="assets/images/collage-3.jpg" alt="Public Advocacy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        © PARI Foundation – People Against Rape in India<br />
+        Building a safer tomorrow.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    let submitted = false;
+
+    function showSuccess() {
+      document.getElementById("formStatus").textContent =
+        "Thank you. Our team will get in touch with you shortly.";
+      document.getElementById("bookOrderForm").reset();
+    }
+  </script>
+
+</body>
+</html>

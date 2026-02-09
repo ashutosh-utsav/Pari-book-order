@@ -1,0 +1,186 @@
+:root {
+  --pari-red: #e31b23;
+  --pari-black: #111;
+  --light-grey: #f6f6f6;
+  --text-dark: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  background: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--pari-black);
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.back-link {
+  text-decoration: none;
+  color: var(--pari-red);
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  padding: 20px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  color: var(--pari-red);
+}
+
+.hero-subtext {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* Sections */
+.section {
+  padding: 70px 0;
+}
+
+.grey-bg {
+  background: var(--light-grey);
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  padding: 30px 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+
+
+/* Form */
+.form-container {
+  max-width: 700px;
+}
+
+.form-note {
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: var(--pari-black);
+  color: #fff;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--pari-red);
+}
+
+.disclaimer {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #555;
+}
+
+.form-status {
+  margin-top: 15px;
+  font-weight: 500;
+}
