@@ -60,7 +60,7 @@
     </div>
   </section>
 
-  <!-- Order Form -->
+  <!-- Order Form
   <section class="section grey-bg">
     <div class="container form-container">
       <h2>Order the Book</h2>
@@ -100,7 +100,59 @@
             Submit Order Request
         </button>
 
-        </form>
+        </form> -->
+
+        <!-- Payment Section -->
+        <section class="section grey-bg">
+        <div class="container payment-container">
+
+            <h2>Order the Book</h2>
+
+            <p class="form-note">
+            Please complete the payment using the QR code or UPI ID below.
+            After making the payment, click the button to submit your details.
+            </p>
+
+            <div class="payment-grid">
+
+            <!-- QR Code -->
+            <div class="qr-box">
+                <img src="assets/images/qr.jpg" alt="UPI QR Code" class="qr-image">
+                <p class="upi-text">
+                <strong>UPI ID:</strong><br>
+                9971054285@ptaxis
+                </p>
+            </div>
+
+            <!-- Instructions -->
+            <div class="instructions-box">
+                <h3>After Payment, Please Keep Ready:</h3>
+                <ul class="instruction-list">
+                <li>✔ Full Name</li>
+                <li>✔ Email ID</li>
+                <li>✔ Delivery Address with PIN Code</li>
+                <li>✔ Contact Number</li>
+                <li>✔ UPI Transaction ID</li>
+                </ul>
+
+                <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSft2ispwXn3WnzrPRyUSRgrHJsajgP7AnR_V-bjpkqkJ2JrAQ/viewform"
+                target="_blank"
+                class="btn-primary form-button"
+                >
+                Submit Payment Details
+                </a>
+
+                <p class="disclaimer">
+                Once verified, our team will process your order and get in touch.
+                </p>
+            </div>
+
+            </div>
+
+        </div>
+        </section>
+
 
 
       <!-- Hidden iframe to prevent redirect -->
@@ -110,9 +162,9 @@
         onload="if(submitted){showSuccess();}"
       ></iframe>
 
-      <p class="disclaimer">
+      <!-- <p class="disclaimer">
         Note: This is not a payment page. Our team will contact you to complete the order.
-      </p>
+      </p> -->
 
       <p id="formStatus" class="form-status"></p>
     </div>
